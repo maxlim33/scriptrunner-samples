@@ -26,7 +26,7 @@
 
     <properties>
         <!-- Set your JIRA version here -->
-        <jira.version>9.4.12</jira.version>
+        <jira.version>10.3.8</jira.version>
         <!-- Set logging levels for development here -->
         <logging.levels>com.example;DEBUG,com.onresolve;DEBUG</logging.levels>
     </properties>
@@ -41,7 +41,8 @@
                 <groupId>com.atlassian.maven.plugins</groupId>
                 <artifactId>jira-maven-plugin</artifactId>
                 <configuration>
-                    <jvmArgs>-Xms512m -Xmx1g -XX:MaxPermSize=1g -XX:-UseGCOverheadLimit -server</jvmArgs>
+                    <jvmArgs>-Xms512m -Xmx4096m -XX:-UseGCOverheadLimit -server</jvmArgs>
+
                     <applications>
                         <!-- Uncomment these if you wish to include them -->
 
