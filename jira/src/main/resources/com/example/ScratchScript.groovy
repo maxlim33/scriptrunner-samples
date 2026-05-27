@@ -4,3 +4,5 @@ package com.example
 "can be run from the Script Console (or any other ScriptRunner extension point such as listeners, post-functions, etc). " +
 "If instead you'd like to run your scripts directly from IntelliJ IDEA, " +
 "take a look at: https://scriptrunner.adaptavist.com/latest/jira/DevEnvironment.html#_external_tool_for_running_scripts_against_jira."
+
+Issues.getByKey('SS-1').summary
